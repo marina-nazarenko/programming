@@ -24,6 +24,7 @@ public class FunctionFive {
         int minutes = (seconds % 3600) / 60;
         seconds = seconds % 60;
 
+        System.out.println("new task5 branch");
 //        System.out.println("T: " + (int) T);
         System.out.print(day + " day " +  hours + "ч " + minutes + "мин " + seconds + "сек");
     }
