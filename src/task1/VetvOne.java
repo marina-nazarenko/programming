@@ -2,17 +2,19 @@ package task1;
 
 public class VetvOne {
     public static void main(String[] args) {
-        int x = 80;
-        int y = 50;
+        int x = 50;
+        int y = 40;
         int z = 90;
-
+//        int z = 80 + (int) (Math.random() * 10);
+        System.out.println("z = " + z);
         if (x + y + z == 180) {
             System.out.println("Такой треугольник существует");
-        } else {
             if (x == 90 || y == 90 || z == 90) {
                 System.out.println("и является прямоугольным.");
             }
+        } else {
+            System.out.println("Такого треугольника не существует!");
         }
-
     }
+
 }
