@@ -5,7 +5,6 @@ public class VetvOne {
         int x = 50;
         int y = 40;
         int z = 90;
-//        int z = 80 + (int) (Math.random() * 10);
         System.out.println("z = " + z);
         if (x + y + z == 180) {
             System.out.println("Такой треугольник существует");
@@ -16,5 +15,4 @@ public class VetvOne {
             System.out.println("Такого треугольника не существует!");
         }
     }
-
 }
