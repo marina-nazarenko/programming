@@ -11,11 +11,11 @@ public class VetvFive {
         System.out.println("Введите x:");
         double x = scanner.nextInt();
 
-        double result = vetvFive.start(x);
+        double result = vetvFive.calculate(x);
         System.out.println(" F(x) = " + result);
     }
 
-    public double start(double x) {
+    private double calculate (double x) {
         double f;
 
         if (x <= 3) {
