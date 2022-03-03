@@ -1,6 +1,7 @@
 package task1;
 
 public class BeerSong {
+
     public static void main(String[] args) {
         int beerNum = 10;
         String word;
@@ -22,3 +23,4 @@ public class BeerSong {
         System.out.println("Нет бутылок пива на стене");
     }
 }
+
