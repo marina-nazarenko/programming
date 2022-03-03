@@ -18,8 +18,8 @@ public class Alg1 {
 
     private void arrayA(int k) {
         int s = 0;
-        int[] a = new int[]{5, 25, 43, 25, 14, 35, 5, 12, 34};
-        for (int i = a[0]; i < a.length; i++) {
+        int[] a = new int[]{6, 25, 43, 25, 14, 35, 5, 12, 34};
+        for (int i = 0; i < a.length; i++) {
             if (a[i] % k == 0) {
                 s += a[i];
             }
