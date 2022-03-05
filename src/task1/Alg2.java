@@ -16,14 +16,17 @@ public class Alg2 {
     }
 
     private void replacement(int z) {
+        int k = 0;
         int nArray[] = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         System.out.println("Последовательность чисел с учетом изменений:");
         for (int i = 0; i < nArray.length; i++) {
             if (nArray[i] > z) {
                 nArray[i] = z;
+                k++;
             }
             System.out.print(nArray[i] + " ");
         }
+        System.out.println("\nКоличество замен:" + k);
     }
 
 
