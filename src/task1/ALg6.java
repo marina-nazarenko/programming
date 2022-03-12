@@ -12,11 +12,11 @@ public class ALg6 {
         System.out.println("Введите N:");
         int n = scanner.nextInt();
         int[] array = alg6.generationArray(n);
-        int result = alg6.primeNumbers(array);
+        int result = alg6.findSumOfNumbersWithIndexSimpleValue(array);
         System.out.println(result);
     }
 
-    private int primeNumbers(int[] array) {
+    private int findSumOfNumbersWithIndexSimpleValue(int[] array) {
         int s = 0;
         for (int i = 2; i < array.length; i++) {
             if (isIndexSimpleValue(i)) {
