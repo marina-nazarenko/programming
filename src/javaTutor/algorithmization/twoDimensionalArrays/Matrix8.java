@@ -18,27 +18,25 @@ public class Matrix8 {
         int[][] matrix = ArrayUtils.generationMatrix(sizeX, sizeY);
 
         System.out.println("Ведите номер 1-го столбца для обмена: ");
-        int st1 = scanner.nextInt();
+        int firstColumn = scanner.nextInt();
         System.out.println("Ведите номер 2-го столбца для обмена: ");
-        int st2 = scanner.nextInt();
+        int secondColumn = scanner.nextInt();
 
         System.out.println("Новая матрица: ");
-        matrix8.columnExchange(matrix, st1, st2);
+        int[][] exchangedMatrix = matrix8.columnExchange(matrix, firstColumn, secondColumn);
+        ArrayUtils.printMatrix(exchangedMatrix);
     }
 
-    private void columnExchange(int[][] matrix, int st1, int st2) {
+    private int[][] columnExchange(int[][] matrix, int firstColumn, int secondColumn) {
+        int j1 = firstColumn - 1;
+        int j2 = secondColumn - 1;
         for (int i = 0; i < matrix.length; i++) {
-            int[] array = new int[matrix[i].length];
-            for (int j = 0; j < matrix[i].length; j++) {
-                if (j == st1 - 1) {
-                    array[j] = matrix[i][st1 - 1];
-                    matrix[i][j] = matrix[i][st2 - 1];
-                }
-                if (j == st2 - 1) {
-                    matrix[i][j] = array[st1 - 1];
-                }
-            }
+            int[] array = matrix[i];
+            int temp = array[j1];
+            array[j1] = array[j2];
+            array[j2] = temp;
         }
-        ArrayUtils.printMatrix(matrix);
+
+        return matrix;
     }
 }
