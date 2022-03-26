@@ -5,13 +5,16 @@ import javaTutor.utils.ArrayUtils;
 public class Matrix11 {
 
     public static void main(String[] args) {
-
         Matrix11 matrix11 = new Matrix11();
         int sizeX = 20;
         int sizeY = 10;
         int[][] matrix = matrix11.generationMatrix(sizeX, sizeY);
         String array = matrix11.findLinesWithNumberFive(matrix);
         System.out.println("Номера строк, в которых цифра 5 встречается 3 и более раз: ");
+        matrix11.outputResult(array);
+    }
+
+    private void outputResult(String array){
         if (array.equals("")) {
             System.out.println("Нет таких строк!");
         } else {
