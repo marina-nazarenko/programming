@@ -40,6 +40,26 @@ public class ArrayUtils {
     }
 
     /**
+     * Generation random matrix with high X and wight Y.
+     *
+     * @param sizeX - length i
+     * @param sizeY - length j
+     * @return matrix
+     */
+    public static int[][] generationMatrixWithNegativeValues(int sizeX, int sizeY) {
+        int[][] matrix = new int[sizeY][sizeX];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] = (int) (Math.random() * 19) - 9;
+            }
+        }
+        System.out.println("Данная матрица: ");
+        printMatrix(matrix);
+
+        return matrix;
+    }
+
+    /**
      * Generation random square matrix.
      *
      * @param size - size of matrix
@@ -47,6 +67,16 @@ public class ArrayUtils {
      */
     public static int[][] generationSquareMatrix(int size) {
         return generationMatrix(size, size);
+    }
+
+    /**
+     * Generation random square matrix.
+     *
+     * @param size - size of matrix
+     * @return square matrix
+     */
+    public static int[][] generationSquareMatrixWithNegativeValues(int size) {
+        return generationMatrixWithNegativeValues(size, size);
     }
 
     /**
