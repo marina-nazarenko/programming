@@ -87,7 +87,11 @@ public class ArrayUtils {
     public static void printMatrix(int[][] matrix) {
         for (int[] ints : matrix) {
             for (int anInt : ints) {
-                System.out.print(anInt + " ");
+                if (String.valueOf(anInt).toCharArray().length == 1) {
+                    System.out.print(anInt + "  ");
+                } else {
+                    System.out.print(anInt + " ");
+                }
             }
             System.out.println(" ");
         }
