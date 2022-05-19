@@ -23,9 +23,22 @@ public class Sorting4 {
 
     private int[] exchangeSorting(int[] array) {
         int count = 0;
+        int k;
+        boolean isSorted = false;
+        while (!isSorted) {
+            isSorted = true;
+            for (int i = 0; i < array.length - 1; i++) {
+                if (array[i] > array[i + 1]) {
+                    isSorted = false;
+                    k = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = k;
+                    count++;
+                }
+            }
+        }
 
-        System.out.println("Колличество перестановок:" + count);
-        return  array;
+        System.out.println("Колличество перестановок - " + count);
+        return array;
     }
-
 }
