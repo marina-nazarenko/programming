@@ -30,7 +30,7 @@ public class ArrayUtils {
         int[][] matrix = new int[sizeY][sizeX];
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                matrix[i][j] = (int) (Math.random() * 9);
+                matrix[i][j] = (int) (Math.random() * 10);
             }
         }
         System.out.println("Данная матрица: ");
