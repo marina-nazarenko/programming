@@ -1,4 +1,4 @@
-package techmeskills.lesson5;
+package techmeskills.lesson5.creditCatd;
 
 import java.util.Scanner;
 
