@@ -1,4 +1,4 @@
-package javaTutor.programmingWithClasses.simpleClassesAndObjects.test1;
+package javaTutor.programmingWithClasses.simpleClassesAndObjects;
 
 public class Test1 {
     private int a;
