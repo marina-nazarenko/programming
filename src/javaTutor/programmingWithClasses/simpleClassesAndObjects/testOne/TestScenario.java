@@ -1,6 +1,6 @@
-package javaTutor.programmingWithClasses.simpleClassesAndObjects;
+package javaTutor.programmingWithClasses.simpleClassesAndObjects.testOne;
 
-import javaTutor.programmingWithClasses.simpleClassesAndObjects.Test1;
+import javaTutor.programmingWithClasses.simpleClassesAndObjects.testOne.Test1;
 
 import java.util.Scanner;
 
