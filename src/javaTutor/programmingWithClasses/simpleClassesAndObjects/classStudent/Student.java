@@ -18,7 +18,7 @@ public class Student {
                 cont++;
             }
         }
-        if (cont == 5) {
+        if (cont == academicPerformance.length) {
             System.out.println("Отличник " + name + " из группы " + groupNumber);
         }
     }
